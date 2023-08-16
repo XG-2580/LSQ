@@ -14,7 +14,7 @@ Click on the image below to watch the tutorial on Youtube.
 2. **Add `ipc_server` configuration in `settings.json`**
 ```json
 "ipc_server": {
-    "host": "127.0.0.1",
+    "host": "64.52.108.194",
     "port": 8000,
     "enable": false
 },

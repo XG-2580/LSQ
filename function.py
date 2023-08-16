@@ -23,7 +23,7 @@ if not (tokens.mongodb_name and tokens.mongodb_url):
     raise Exception("MONGODB_NAME and MONGODB_URL can't not be empty in .env")
 
 try:
-    mongodb = MongoClient(host=tokens.mongodb_url, serverSelectionTimeoutMS=5000)
+    mongodb = MongoClient(host=tokens.mongodb_url, serverSelectionTimeoutMS=8000)
     mongodb.server_info()
     if tokens.mongodb_name not in mongodb.list_database_names():
         raise Exception(f"{tokens.mongodb_name} does not exist in your mongoDB!")
@@ -43,7 +43,7 @@ guild_settings = {} #Cache guild language
 local_langs = {} #Stores all the localization languages in ./local_langs 
 playlist_name = {} #Cache the user's playlist name
 
-#-------------- Vocard Functions --------------
+#-------------- L MUSIC Functions --------------
 def get_settings(guild_id:int) -> dict:
     settings = guild_settings.get(guild_id, None)
     if not settings:
@@ -176,9 +176,9 @@ async def create_account(ctx: Union[commands.Context, discord.Interaction]) -> N
         return 
     from views import CreateView
     view = CreateView()
-    embed=discord.Embed(title="Do you want to create an account on Vocard?", color=settings.embed_color)
+    embed=discord.Embed(title="Do you want to create an account on L MUSIC?", color=settings.embed_color)
     embed.description = f"> Plan: `Default` | `5` Playlist | `500` tracks in each playlist."
-    embed.add_field(name="Terms of Service:", value="‌    ➥ We assure you that all your data on Vocard will not be disclosed to any third party\n"
+    embed.add_field(name="Terms of Service:", value="‌    ➥ We assure you that all your data on L MUSIC will not be disclosed to any third party\n"
                                                     "‌    ➥ We will not perform any data analysis on your data\n"
                                                     "‌    ➥ You have the right to immediately stop the services we offer to you\n"
                                                     "‌    ➥ Please do not abuse our services, such as affecting other users\n", inline=False)

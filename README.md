@@ -2,13 +2,13 @@
     <img src="https://img.shields.io/discord/811542332678996008?color=7289DA&label=Support&logo=discord&style=for-the-badge" alt="Discord">
 </a>
 
-# Vocard (Discord Music Bot)
-> Vocard is a simple custom Disocrd Music Bot built with Python & [discord.py](https://discordpy.readthedocs.io/en/stable/) <br>
+# L MUSIC (Discord Music Bot)
+> L MUSIC is a simple custom Disocrd Music Bot built with Python & [discord.py](https://discordpy.readthedocs.io/en/stable/) <br>
 Demo: [Discord Bot Demo](https://discord.com/api/oauth2/authorize?client_id=890399639008866355&permissions=36708608&scope=bot%20applications.commands),
-[Dashboard Demo](https://vocard.xyz)
+[Dashboard Demo](https://L MUSIC.xyz)
 
 # Host for you?
-<a href="https://www.patreon.com/Vocard">
+<a href="https://www.patreon.com/L MUSIC">
     <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dendel%26type%3Dpatrons&style=for-the-badge" alt="Patreon">
 </a>
 
@@ -25,24 +25,24 @@ Click on the image below to watch the tutorial on Youtube.
 <img src="https://user-images.githubusercontent.com/94597336/227766416-22ae3d91-40d9-44c0-bde1-9d40bd54c3af.png">
 
 ### Dashboard
-<img src="https://github.com/ChocoMeow/Vocard/assets/94597336/53f31f9f-57c5-452c-8317-114125ddbf03">
-<img src="https://github.com/ChocoMeow/Vocard/assets/94597336/b2acd87a-e910-4247-8d5a-418f3782f63f">
+<img src="https://github.com/ChocoMeow/L MUSIC/assets/94597336/53f31f9f-57c5-452c-8317-114125ddbf03">
+<img src="https://github.com/ChocoMeow/L MUSIC/assets/94597336/b2acd87a-e910-4247-8d5a-418f3782f63f">
 
 ## Run the Projects
-[![Run on Repl.it](https://replit.com/badge/github/ChocoMeow/Vocard)](https://replit.com/new/github/ChocoMeow/Vocard)
+[![Run on Repl.it](https://replit.com/badge/github/ChocoMeow/L MUSIC)](https://replit.com/new/github/ChocoMeow/L MUSIC)
 
 ## Requirements
 * [Python 3.10+](https://www.python.org/downloads/)
-* [Modules in requirements](https://github.com/ChocoMeow/Vocard/blob/main/requirements.txt)
+* [Modules in requirements](https://github.com/ChocoMeow/L MUSIC/blob/main/requirements.txt)
 * [Lavalink Server (Requires 3.7.0+)](https://github.com/freyacodes/Lavalink)
 
 ## Quick Start
 ```sh
-git clone https://github.com/ChocoMeow/Vocard.git  #Clone the repository
-cd Vocard                                          #Go to the directory
+git clone https://github.com/ChocoMeow/L MUSIC.git  #Clone the repository
+cd L MUSIC                                          #Go to the directory
 python -m pip install -r requirements.txt          #Install required packages
 ```
-After installing all packages, you must configure the bot before to start! [How To Configure](https://github.com/ChocoMeow/Vocard#configuration)<br />
+After installing all packages, you must configure the bot before to start! [How To Configure](https://github.com/ChocoMeow/L MUSIC#configuration)<br />
 Start your bot with `python main.py`
 
 ## Configuration
@@ -61,7 +61,7 @@ SPOTIFY_CLIENT_SECRET = 0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 GENIUS_TOKEN = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 MONGODB_URL = mongodb+srv://user:password@clusterURL
-MONGODB_NAME = Vocard
+MONGODB_NAME = L MUSIC
 ```
 | Values | Description |
 | --- | --- |
@@ -82,7 +82,7 @@ MONGODB_NAME = Vocard
 {
     "nodes": {
         "DEFAULT": {
-            "host": "127.0.0.1",
+            "host": "64.52.108.194",
             "port": 2333,
             "password": "password",
             "secure": false,
@@ -98,7 +98,7 @@ MONGODB_NAME = Vocard
     "default_max_queue": 1000,
     "lyrics_platform": "A_ZLyrics",
     "ipc_server": {
-        "host": "127.0.0.1",
+        "host": "64.52.108.194",
         "port": 8000,
         "enable": false
     },
@@ -156,7 +156,7 @@ MONGODB_NAME = Vocard
 ```
 * For `nodes` you have to provide host, port, password and identifier of the [Lavalink Server](https://github.com/freyacodes/Lavalink)
 * For `prefix` you can set the prefix of the bot. (If you don't provide any prefix, the bot will disable the message command).
-* For `activity` you can set the activity of the bot. [Example Here](https://github.com/ChocoMeow/Vocard/blob/main/PLACEHOLDERS.md#bot-activity-activity-are-updated-every-10-minutes)
+* For `activity` you can set the activity of the bot. [Example Here](https://github.com/ChocoMeow/L MUSIC/blob/main/PLACEHOLDERS.md#bot-activity-activity-are-updated-every-10-minutes)
 * For `bot_access_user` you can pass the [discord user id](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). Example: `[123456789012345678]`
 * For `embed_color` you must pass a [Hexadecimal color code](https://htmlcolorcodes.com/) and add `0x` before the color code. Example: `"0xb3b3b3"`
 * For `default_max_queue` you can set a default maximum number of tracks that can be added to the queue.
@@ -165,7 +165,7 @@ MONGODB_NAME = Vocard
 * For `emoji_source_raw` you can change the source emoji of the track with discord emoji like `<:EMOJI_NAME:EMOJI_ID>`
 * For `cooldowns` you can set a custom cooldown in the command. Example: `"command_name": [The total number of tokens available, The length of the cooldown period in seconds]`
 * For `aliases` you can set custom aliases in the command. Example: `"command_name": [alias1, alias2, ...]`
-* For `default_controller` you can set custom embeds and buttons in controller, [Example Here](https://github.com/ChocoMeow/Vocard/blob/main/PLACEHOLDERS.md#controller-embeds)
+* For `default_controller` you can set custom embeds and buttons in controller, [Example Here](https://github.com/ChocoMeow/L MUSIC/blob/main/PLACEHOLDERS.md#controller-embeds)
 
 ## How to update? (For Windows and Linux)
 ***Note: Make sure there are no personal files in the directory! Otherwise it will be deleted.***

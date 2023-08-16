@@ -5,7 +5,7 @@ root_dir = os.path.dirname(os.path.abspath(__file__))
 __version__ = "v2.6.6"
 
 GITHUB_API_URL = "https://api.github.com/repos/ChocoMeow/Vocard/releases/latest"
-VOCARD_URL = "https://github.com/ChocoMeow/Vocard/archive/"
+Vocard_URL = "https://github.com/ChocoMeow/Vocard/archive/"
 IGNORE_FILES = ["settings.json", ".env"]
 
 class bcolors:
@@ -42,7 +42,7 @@ def download_file(version=None):
     """
     version = version if version else check_version()
     print(f"Downloading Vocard version: {version}")
-    response = requests.get(VOCARD_URL + version + ".zip")
+    response = requests.get(Vocard_URL + version + ".zip")
     if response.status_code == 404:
         print(f"{bcolors.FAIL}Warning: Version not found!{bcolors.ENDC}")
         exit()
