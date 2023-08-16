@@ -44,7 +44,7 @@ class Settings:
         })
         self.lyrics_platform = settings.get("lyrics_platform", "A_ZLyrics").lower()
         self.ipc_server = settings.get("ipc_server", {
-                "host": "127.0.0.1",
+                "host": "64.52.108.194",
                 "port": 8000,
                 "enable": False
             }
